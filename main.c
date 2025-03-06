@@ -18,9 +18,9 @@ int main(int argc,char ** argv)
     printf("main:\n");
     // li为addi别名指令，加载一个立即数到寄存器中
     // 传入程序参数为str类型,因为需要转换为int类型使用atoi
-    printf("  li a0, %d\n",atoi(argv[1]));
+    printf("    li a0, %d\n",atoi(argv[1]));
     // ret为jalr x0, x1, 0别名指令， 用于返回子程序
-    printf("  ret\n");
+    printf("    ret\n");
     
     return 0;
 }
